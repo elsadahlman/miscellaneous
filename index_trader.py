@@ -38,8 +38,8 @@ def find_trades():
     highest_price = tot_high['high']
     lowest_price = tot_low['low']
 
-    print(f"highest price: {highest_price}, date: {tot_high['quote_date']}")
-    print(f"lowest price: {lowest_price}, date: {tot_low['quote_date']}")
-    print(f"Profit: {highest_price-lowest_price}")
+    print(f"Buy price: {lowest_price} \nBuy date: {tot_low['quote_date']}")
+    print(f"Sell price: {highest_price} \nSell date: {tot_high['quote_date']}")
+    print(f"Profit: {highest_price - lowest_price}")
 
 find_trades()
